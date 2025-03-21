@@ -900,3 +900,373 @@ nav ul li a:hover {
   padding: 30px 20px; /* Increase padding */
   font-size: 26px; /* Make text bigger */
 }
+/* 🔹 General Navbar Styling */
+.nav-btn {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 🔹 Hover Effect */
+.nav-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarges */
+}
+
+/* 🔹 "Add New Scrum" button (Admin only) */
+.nav-btn.admin-btn {
+  background-color: #28a745; /* Green button for admin */
+}
+
+.nav-btn.admin-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* 🔹 User Dashboard Header - Slightly Larger */
+.user-dashboard-header {
+  padding: 20px;
+  font-size: 22px;
+}
+/* 🔹 General Navbar Button */
+.nav-btn {
+  background-color: #007bff; /* Blue Button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 🔹 Hover Effect */
+.nav-btn:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05);
+}
+
+/* 🔹 Admin-Only "Add New Scrum" Button */
+.nav-btn.admin-btn {
+  background-color: #28a745; /* Green for Admin Button */
+}
+
+.nav-btn.admin-btn:hover {
+  background-color: #218838; /* Darker Green */
+}
+.add-scrum-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.add-scrum-container h2 {
+  color: #333;
+}
+
+.add-scrum-container label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.add-scrum-container input,
+.add-scrum-container textarea,
+.add-scrum-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.cancel-btn:hover {
+  background: #c82333;
+}
+.scrum-task {
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease-in-out;
+}
+
+.scrum-task:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.status-dropdown {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.save-status-btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.header nav {
+  display: flex;
+  gap: 20px;
+  background: #333;
+  padding: 10px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.add-user-btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.profile-container,
+.add-user-container,
+.dashboard-container {
+  text-align: center;
+  margin-top: 30px;
+}
+.admin-controls {
+  margin-top: 10px;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.history-btn {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.close-all-btn {
+  margin-top: 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-btn {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.admin-btn {
+  background-color: #ff5733;
+  color: white;
+}
+
+.add-user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-user-container input, select, button {
+  margin: 5px;
+  padding: 10px;
+}
+/* ✅ Fix Header Position */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;  /* ✅ Fixed position so it stays on top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* ✅ Prevent Overlapping */
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ✅ Adjust Body Padding */
+body {
+  padding-top: 70px;  /* ✅ Push content below header */
+}
+
+/* ✅ Navigation Styling */
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.header ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.logout-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+/* ✅ Make Logout Button Red in Dashboard */
+.dashboard .logout-btn {
+  background-color: red !important;  /* ✅ Ensure it stays red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.dashboard .logout-btn:hover {
+  background-color: darkred;  /* ✅ Darker shade on hover */
+}
+.add-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ✅ Full height */
+}
+
+.form-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.create-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+}
+
+.create-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}

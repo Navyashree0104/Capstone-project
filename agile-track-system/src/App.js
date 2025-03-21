@@ -6,7 +6,9 @@ import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Admin from "./pages/Admin";
-import Scrum from "./pages/Scrum";
+import ScrumList from "./pages/ScrumList";
+import AddScrum from "./pages/AddScrum";
+import AddUser from "./pages/AddUser";
 import Header from "./components/Header";
 import "./styles.css";
 
@@ -24,24 +26,28 @@ function App() {
     localStorage.removeItem("isAuthenticated");
     localStorage.removeItem("loggedInUser");
     setIsAuthenticated(false);
-    window.location.href = "/"; // ✅ Ensures redirect to Dashboard
   };
 
   return (
     <Router>
-      {isAuthenticated && <Header onLogout={handleLogout} />} {/* ✅ Single Header */}
-      
+      {isAuthenticated && <Header onLogout={handleLogout} />} {/* ✅ Header shown only when authenticated */}
+
       <Routes>
+        {/* ✅ Public Routes */}
         <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
         <Route path="/signup" element={<Signup />} />
+
+        {/* ✅ Protected Routes */}
         <Route path="/home" element={isAuthenticated ? <Home /> : <Navigate to="/" />} />
         <Route path="/profile" element={isAuthenticated ? <Profile /> : <Navigate to="/" />} />
-
-        {/* ✅ Admin & Scrum Routes */}
         <Route path="/admin" element={isAuthenticated ? <Admin /> : <Navigate to="/" />} />
-        <Route path="/scrum" element={isAuthenticated ? <Scrum /> : <Navigate to="/" />} />
+        <Route path="/add-user" element={isAuthenticated ? <AddUser /> : <Navigate to="/" />} />
+        <Route path="/scrum" element={isAuthenticated ? <ScrumList /> : <Navigate to="/" />} />
+        <Route path="/add-scrum" element={isAuthenticated ? <AddScrum /> : <Navigate to="/" />} />
+        <Route path="/edit-scrum/:id" element={isAuthenticated ? <AddScrum /> : <Navigate to="/" />} />
 
+        {/* ✅ Handle Unknown Routes */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
