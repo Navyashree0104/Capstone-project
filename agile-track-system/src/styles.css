@@ -1,0 +1,1272 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4a90e2, #6a11cb); /* Gradient for smooth UI */
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: #5c67e0;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15); /* Glass effect */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #4a3f35;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #8b6f47;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Password Field */
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #8b6f47;
+}
+
+/* Buttons */
+button {
+  background-color: #6a11cb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #5c67e0;
+}
+
+/* Navigation Buttons */
+.nav-btn, .logout-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: #00f2fe;
+}
+
+.logout-btn {
+  border-color: red;
+  color: red;
+}
+
+.logout-btn:hover {
+  background: red;
+  color: white;
+}
+
+/* Links */
+.link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #d1d8e0;
+}
+
+/* Teams Section */
+.teams {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.team {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Restricted Page */
+.restricted {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* Centering Home Page */
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Headline Styling */
+.headline {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Scrum Teams Container */
+.teams-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Team Cards */
+.team-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 200px;
+}
+
+/* Get Details Button */
+.details-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.details-btn:hover {
+  background: #0056b3;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  padding: 10px;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: #333;
+}
+
+/* Logout Button */
+.logout-btn {
+  border-color: red;
+}
+
+.logout-btn:hover {
+  background: red;
+  color: white;
+}
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: #333;
+}
+
+/* Welcome Content */
+.welcome-content {
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+}
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+}
+
+.logout-btn {
+  border-color: red;
+  color: red;
+}
+
+.logout-btn:hover {
+  background: red;
+  color: white;
+}
+/* General */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: #333;
+}
+
+.logout-btn {
+  border-color: red;
+  color: red;
+}
+
+.logout-btn:hover {
+  background: red;
+  color: white;
+}
+
+/* Welcome Content */
+.welcome-content {
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Home Page */
+.home-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.headline {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.teams-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+}
+
+.details-btn {
+  background: #4b79a1;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.details-btn:hover {
+  background: #283e51;
+}
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav-btn {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.logout-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}
+
+/* Home Page */
+.home-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrum Teams */
+.team-card {
+  background: lightgray;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.details-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.details-btn:hover {
+  background: #0056b3;
+}
+
+.team-details {
+  background: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Users Section */
+.user-card {
+  background: lightblue;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.role {
+  font-style: italic;
+  color: rgb(241, 237, 237);
+}
+/* Ensure home page content is properly displayed */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to right, #141e30, #243b55); /* Professional dark theme */
+  color: rgb(249, 245, 245);
+  text-align: center;
+}
+
+/* Ensure Scrum Teams layout is horizontal */
+.scrum-teams {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Styling each Scrum Team box */
+.scrum-team {
+  width: 30%; /* Distributes teams across the screen */
+  min-width: 250px;
+  background: rgba(155, 98, 247, 0.895); /* Transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(249, 247, 247, 0.3);
+  transition: transform 0.3s ease-in-out;
+  max-height: 300px; /* Set a fixed height to allow scrolling inside */
+  overflow-y: auto; /* Enable scrolling inside */
+}
+
+/* Custom scrollbar for team boxes */
+.scrum-team::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrum-team::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.scrum-team::-webkit-scrollbar-thumb {
+  background: #6200ea;
+  border-radius: 10px;
+}
+
+.scrum-team::-webkit-scrollbar-thumb:hover {
+  background: #3700b3;
+}
+
+/* On hover, make it more interactive */
+.scrum-team:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure "Get Details" buttons are readable */
+.get-details-btn {
+  background: rgba(0, 0, 0, 0.6); /* Dark background for contrast */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for Get Details button */
+.get-details-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive - Adjusts for smaller screens */
+@media (max-width: 768px) {
+  .scrum-teams {
+    flex-direction: column;
+  }
+  .scrum-team {
+    width: 80%;
+  }
+}
+/* Header Navigation Bar */
+.header {
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 15px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header nav ul li {
+  display: inline;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+.header nav ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Profile Container */
+.profile-container {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Tasks Container */
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Task Cards */
+.task-card {
+  background: rgba(248, 247, 245, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  width: 50%;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+.task-card h3 {
+  color: #ffcc00;
+}
+
+.task-card p {
+  margin: 5px 0;
+}
+/* Header Styling */
+.header {
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  margin-left: 20px;
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #ff4747;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #d43f3f;
+}
+.profile-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.employee-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.employee-btn {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.employee-btn:hover {
+  background: #4834d4;
+}
+
+.employee-tasks {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.employee-tasks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-tasks li {
+  background: rgba(255, 255, 255, 0.893);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+/* Ensure profile content doesn't hide behind header */
+.profile-container {
+  text-align: center;
+  padding: 80px 20px 20px; /* Added padding-top to move content down */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px); /* Adjust height to fit screen */
+}
+
+/* Center employee buttons */
+.employee-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Style employee buttons */
+.employee-btn {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.employee-btn:hover {
+  background: #4834d4;
+}
+
+/* Ensure task list is centered */
+.employee-tasks {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Task list styles */
+.employee-tasks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-tasks li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+/* Close All Button */
+.close-all-btn {
+  margin-top: 15px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.close-all-btn:hover {
+  background: darkred;
+}
+.profile-container h2 {
+  color: white; /* Change only the "User Profiles" headline to white */
+}
+.logout-btn {
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.logout-btn:hover {
+  background-color: darkred;
+}
+/* Default Header */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ✅ Enlarge header for user Dashboard */
+.user-dashboard-header {
+  padding: 30px 20px; /* Increase padding */
+  font-size: 26px; /* Make text bigger */
+}
+/* 🔹 General Navbar Styling */
+.nav-btn {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 🔹 Hover Effect */
+.nav-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarges */
+}
+
+/* 🔹 "Add New Scrum" button (Admin only) */
+.nav-btn.admin-btn {
+  background-color: #28a745; /* Green button for admin */
+}
+
+.nav-btn.admin-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* 🔹 User Dashboard Header - Slightly Larger */
+.user-dashboard-header {
+  padding: 20px;
+  font-size: 22px;
+}
+/* 🔹 General Navbar Button */
+.nav-btn {
+  background-color: #007bff; /* Blue Button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 🔹 Hover Effect */
+.nav-btn:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05);
+}
+
+/* 🔹 Admin-Only "Add New Scrum" Button */
+.nav-btn.admin-btn {
+  background-color: #28a745; /* Green for Admin Button */
+}
+
+.nav-btn.admin-btn:hover {
+  background-color: #218838; /* Darker Green */
+}
+.add-scrum-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.add-scrum-container h2 {
+  color: #333;
+}
+
+.add-scrum-container label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.add-scrum-container input,
+.add-scrum-container textarea,
+.add-scrum-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.cancel-btn:hover {
+  background: #c82333;
+}
+.scrum-task {
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease-in-out;
+}
+
+.scrum-task:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.status-dropdown {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.save-status-btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.header nav {
+  display: flex;
+  gap: 20px;
+  background: #333;
+  padding: 10px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.add-user-btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.profile-container,
+.add-user-container,
+.dashboard-container {
+  text-align: center;
+  margin-top: 30px;
+}
+.admin-controls {
+  margin-top: 10px;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.history-btn {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.close-all-btn {
+  margin-top: 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-btn {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.admin-btn {
+  background-color: #ff5733;
+  color: white;
+}
+
+.add-user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-user-container input, select, button {
+  margin: 5px;
+  padding: 10px;
+}
+/* ✅ Fix Header Position */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;  /* ✅ Fixed position so it stays on top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* ✅ Prevent Overlapping */
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ✅ Adjust Body Padding */
+body {
+  padding-top: 70px;  /* ✅ Push content below header */
+}
+
+/* ✅ Navigation Styling */
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.header ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.logout-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+/* ✅ Make Logout Button Red in Dashboard */
+.dashboard .logout-btn {
+  background-color: red !important;  /* ✅ Ensure it stays red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.dashboard .logout-btn:hover {
+  background-color: darkred;  /* ✅ Darker shade on hover */
+}
+.add-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ✅ Full height */
+}
+
+.form-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.create-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+}
+
+.create-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
